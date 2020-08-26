@@ -5,16 +5,19 @@ class Main extends JFrame {
     
     class App extends JPanel {
         
-        Stage stage;
+        //Stage stage;
+        Grid grid;
 
         public App() {
             setPreferredSize(new Dimension(920, 720));
-            stage = new Stage();
+            //stage = new Stage();
+            grid = new Grid();
         }
 
         @Override
         public void paint(Graphics g) {
-            stage.paint(g, getMousePosition());
+            //stage.paint(g, getMousePosition());
+            grid.paint(g, getMousePosition());
         }
 
     }
